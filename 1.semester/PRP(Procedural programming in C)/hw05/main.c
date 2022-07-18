@@ -59,6 +59,13 @@ int compare(msg_t *msg, int len);
  */
 void shift(msg_t *msg, int offset, int len);
 
+/**
+ * HW06 - Caesar cipher
+ * A programm takes two string from user. First string is encoded message, second is the
+ * unreliable overheard message. The task is to decrypt first message using the second one by 
+ * comparing each letter in both messages.
+ */
+
 int main(int argc, char *argv[]) {
     int ret = 0;
     int ret_cipher, ret_inc_msg;

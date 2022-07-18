@@ -1,0 +1,3 @@
+The included files might serve as an inspiration for the implementation of HW10. However, all files should be carefully reviewed (best line-by-line) to be aware of what can be utilized. Simple copy&paste might not work as the files are not implementing HW10 with the particularly defined interface in dijkstra.h as of https://cw.fel.cvut.cz/wiki/courses/b0b36prp/hw/hw10#definice_rozhrani_a_binarniho_formatu .
+
+As the closest to HW10, files in graph_search might be considered as the starting point. Again, take a look at graph_search/dijkstra.h, which does not include (commented out) the mandatory functions of the required interface of the dijkstra.h.
