@@ -1,0 +1,9 @@
+Vertex 1 has 1 neighbors: 5 
+Vertex 2 has 1 neighbors: 5 
+Vertex 3 has 3 neighbors: 6 7 5 
+Vertex 4 has 1 neighbors: 7 
+Vertex 5 has 3 neighbors: 1 2 3 
+Vertex 6 has 1 neighbors: 3 
+Vertex 7 has 2 neighbors: 4 3 
+Vertex with degree two: 7
+Time = 0.000000

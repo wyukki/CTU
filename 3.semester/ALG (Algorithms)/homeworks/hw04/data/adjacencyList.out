@@ -1,0 +1,15 @@
+Number of villages=10, numberOfRoutes=10,
+ friendlyVillages=1, maxSaturation=1
+Village 1 has 1 neighbours: 8 
+Village 2 has 3 neighbours: 3 10 9 
+Village 3 has 2 neighbours: 2 7 
+Village 4 has 1 neighbours: 6 
+Village 5 has 2 neighbours: 9 8 
+Village 6 has 2 neighbours: 4 8 
+Village 7 has 2 neighbours: 3 10 
+Village 8 has 3 neighbours: 1 5 6 
+Village 9 has 2 neighbours: 2 5 
+Village 10 has 2 neighbours: 2 7 
+
+RESULT
+TIME: 0.000000
