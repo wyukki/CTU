@@ -49,16 +49,11 @@ node_t *addToTree(node_t *node, int **adjacencyMatrix, int numberOfRedVertices,
     node->isRed = isRed(currVertex, numberOfRedVertices);
     node->number = currVertex;
     node->counterOfRedBefore = 0;
-    // printf("Vertex %d is added!\n", node->number);
     int child = getFirstChild(adjacencyMatrix, currVertex);
-    if (child != -1) {
-        // printf("The first child of vertex %d is %d\n", currVertex, child);
-    }
     if (parent != -1) {
         removeFromAdjacencyMatrix(adjacencyMatrix, currVertex, parent);
     }
     if (!vertexHasAChild(adjacencyMatrix, currVertex)) {
-        // printf("The vertex %d has no children!\n", currVertex);
         node->left = NULL;
         node->right = NULL;
         return node;
@@ -139,8 +134,6 @@ void findResult(node_t *node, node_t *parent, int numberOfRedVertices) {
         } else if (diff == result->difference) {
             int newResultNode1 = node->number > parent->number ? parent->number : node->number;
             int newResultNode2 = node->number < parent->number ? parent->number : node->number;
-            // result->node1 = node->number > newResultNode1 ? newResultNode1 : node->number;
-            // result->node2 = node->number < newResultNode2 ? newResultNode2 : node->number;
             result->node1 = result->node1 > newResultNode1 ? newResultNode1 : result->node1;
             result->node2 = result->node2 > newResultNode2 ? newResultNode2 : result->node2;
         }

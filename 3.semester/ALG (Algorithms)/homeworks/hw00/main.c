@@ -21,7 +21,8 @@ void print_duplicates(int *duplicates, int duplicates_len);
 int division(int *duplicates, int startIndex, int finalIndex);
 
 /**
- * Program recieves sequnce of numbers, and finds duplicates in it.
+ * Program recieves sequnce of numbers, and computes number of duplicates in it.
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=trivialtraining
  */
 
 int main(int argc, char *argv[]) {

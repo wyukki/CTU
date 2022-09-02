@@ -11,10 +11,25 @@
 #define DELETE_OPERATION 1
 #define UNDEFINED_OPERATION -1
 
+/**
+ * Reads input and creates an array of operations.
+ */
 int **getOperations(int numberOfOperations);
+/**
+ * Prints operation to stdout.
+ */
 void printOpearations(int **operations, int numberOfOperations);
+/**
+ * Frees memory
+ */
 void freeOperations(int **opearations, int numberOfOpeartions);
+/**
+ * Returns INSERT_OPERATION or DELETE_OPERATION
+ */
 int getOperationType(int **operation, int operationNumber);
+/**
+ * Returns an interval of certain operation
+ */
 int getIntervalLength(int **operations, int operationNumber);
 
 

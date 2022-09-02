@@ -65,6 +65,9 @@ int **createCopyOfMatrix(int **fakeMatrix);
  * 2. field, that is represented by matrix, where each element has a number - the cost of this place
  * 3. number of house "patterns", that will be used
  * 4. patterns themselves: first number is number of concrete pattern, second - it's width, third - it's height
+ * 
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=grounds
+ * (only in czech)
  */
 
 int main(int argc, char const *argv[]) {

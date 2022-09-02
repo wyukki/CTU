@@ -2,11 +2,40 @@
 
 const char *const alloc_error = "Allocation error on line %d in file %s!\n";
 
+/**
+ * Read input and create matrix of adjacent nodes.
+ */
 int **getAdjacencyMatrix(int numberOfVertices);
+/**
+ * Frees matrix of adjacent nodes.
+ */
 void freeAdjacencyMatrix(int **adjacencyMatrix, int numberOfVertices);
+/**
+ * Adds to matrix new node
+ */
 void addToMatrix(int **adjacencyMatrix, int index, int vertex);
+/**
+ * Prints matrix on stdout
+ */
 void printAdjacencyMatrix(int **adjacencyMatrix, int numberOfVertices);
+/**
+ * Finds first vertex in adjacency matrix, that has two "children".
+ * That vertex will be the root in our tree.
+ */
 int findFirstVertexWithDegreeTwo(int **adjacencyMatrix, int numberOfVertices);
+
+/**
+ * We have a tree, where nodes are either white or red.
+ * Goal is to traverse tree, and find that node, where the differnce
+ * between left and right red nodes count will be the smallest.
+ * 
+ * Input is: first number (N) is a total nodes count, second (R) is count of red nodes.
+ * First R numbers are always red nodes. Next N - 1 lines of input represents
+ * two adjacent nodes (e.g. 1 2 means there is an edge between them). 
+ * 
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=beads
+ * (only in czech)
+ */
 
 int main(int argc, char const *argv[]) {
     int ret = EXIT_SUCCESS;

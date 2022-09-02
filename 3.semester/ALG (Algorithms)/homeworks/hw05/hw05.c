@@ -1,13 +1,13 @@
 #include "tree.h"
 #include "utils.h"
 
-void fillVertices(bool *vertices, int typeOfOperation, int start, int end);
-int *trimVertices(bool *vertices);
-void findNewRoot(bool *vertices);
-void depthOnTheLeft(bool *vertices);
-
-int **getAdjacencyList();
-
+/**
+ * Assume we have classical BST.
+ * Goal is to implement interval add and delete operation.
+ *
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=intervalBVS
+ * (only in czech)
+ */
 int main(int argc, char *argv[]) {
     int ret = EXIT_SUCCESS;
     int numberOfOperations;

@@ -27,6 +27,8 @@ int* verticals; // global because it takes a huge amount of memory, and can't be
  * 
  * There is an image in this directory, that would describe problem better.
  * 10 points out of 10.
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=buildingarea
+ * (only in czech)
  */
 
 int main(int argc, char* argv[]) {

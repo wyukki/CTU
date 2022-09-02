@@ -1,15 +1,18 @@
 #include "utils.h"
 #include <time.h>
 
+/**
+ * Assignment: https://cw.felk.cvut.cz/brute/data/ae/release/2021z_b4b33alg/alg_cz_2021z/evaluation/input.php?task=retrogame
+ * (only in czech)
+ */
+
 int main(int argc, char const *argv[]) {
     int ret = EXIT_SUCCESS;
-    clock_t start = clock();
     int width, eggs_count;
     if ((scanf("%d %d\n", &width, &eggs_count)) != 2) {
         fprintf(stderr, "Error: wrong input!\n");
         return EXIT_FAILURE;
     }
-    // printf("Number of eggs: %d\n", eggs_count);
     int *eggs = (int *)malloc(sizeof(int) * ELEMENTS_IN_ARRAY * (eggs_count + 2));
     if (!eggs) {
         fprintf(stderr, alloc_error, __LINE__, __FILE__);
@@ -51,7 +54,5 @@ int main(int argc, char const *argv[]) {
         free(table[i]);
     }
     free(table);
-    clock_t end = clock();
-    printf("TIME: %f\n", (double) (end - start) / CLOCKS_PER_SEC);
     return ret;
 }
