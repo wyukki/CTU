@@ -1,0 +1,1246 @@
+c[?7l[2J[0mSeaBIOS (version rel-1.14.0-0-g155821a1990b-prebuilt.qemu.org)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8F130+07EEF130 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..NOVA Microhypervisor 0.3 (Cleetwood Cove): Dec 10 2021 18:00:19 [gcc 9.3.0]
+
+
+--> Code:void test()
+
+
+--> Code:{
+
+
+--> Total allocated memory: 0x0
+
+
+--> Memory available: 0x1200000    allocation size: 0x80000    allocation count: 36
+
+
+--> Code:  void *addr0 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr0, 0x1, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x300c
+
+
+-->             Setting memory range 0x300c-0x8300b to 0x1
+
+
+--> Code:  void *addr1 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr1, 0x2, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x83018
+
+
+-->             Setting memory range 0x83018-0x103017 to 0x2
+
+
+--> Code:  void *addr2 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr2, 0x3, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x103025
+
+
+-->             Setting memory range 0x103025-0x183024 to 0x3
+
+
+--> Code:  void *addr3 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr3, 0x4, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x183031
+
+
+-->             Setting memory range 0x183031-0x203030 to 0x4
+
+
+--> Code:  void *addr4 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr4, 0x5, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x20303d
+
+
+-->             Setting memory range 0x20303d-0x28303c to 0x5
+
+
+--> Code:  void *addr5 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr5, 0x6, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x283049
+
+
+-->             Setting memory range 0x283049-0x303048 to 0x6
+
+
+--> Code:  void *addr6 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr6, 0x7, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x303055
+
+
+-->             Setting memory range 0x303055-0x383054 to 0x7
+
+
+--> Code:  void *addr7 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr7, 0x8, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x383061
+
+
+-->             Setting memory range 0x383061-0x403060 to 0x8
+
+
+--> Code:  void *addr8 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr8, 0x9, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x40306d
+
+
+-->             Setting memory range 0x40306d-0x48306c to 0x9
+
+
+--> Code:  void *addr9 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr9, 0xa, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x483079
+
+
+-->             Setting memory range 0x483079-0x503078 to 0xa
+
+
+--> Code:  void *addr10 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr10, 0xb, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x503085
+
+
+-->             Setting memory range 0x503085-0x583084 to 0xb
+
+
+--> Code:  void *addr11 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr11, 0xc, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x583091
+
+
+-->             Setting memory range 0x583091-0x603090 to 0xc
+
+
+--> Code:  void *addr12 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr12, 0xd, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x60309d
+
+
+-->             Setting memory range 0x60309d-0x68309c to 0xd
+
+
+--> Code:  void *addr13 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr13, 0xe, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x6830a9
+
+
+-->             Setting memory range 0x6830a9-0x7030a8 to 0xe
+
+
+--> Code:  void *addr14 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr14, 0xf, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x7030b5
+
+
+-->             Setting memory range 0x7030b5-0x7830b4 to 0xf
+
+
+--> Code:  void *addr15 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr15, 0x10, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x7830c1
+
+
+-->             Setting memory range 0x7830c1-0x8030c0 to 0x10
+
+
+--> Code:  void *addr16 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr16, 0x11, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x8030cd
+
+
+-->             Setting memory range 0x8030cd-0x8830cc to 0x11
+
+
+--> Code:  void *addr17 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr17, 0x12, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x8830d9
+
+
+-->             Setting memory range 0x8830d9-0x9030d8 to 0x12
+
+
+--> Code:  void *addr18 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr18, 0x13, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x9030e5
+
+
+-->             Setting memory range 0x9030e5-0x9830e4 to 0x13
+
+
+--> Code:  void *addr19 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr19, 0x14, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x9830f1
+
+
+-->             Setting memory range 0x9830f1-0xa030f0 to 0x14
+
+
+--> Code:  void *addr20 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr20, 0x15, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xa030fd
+
+
+-->             Setting memory range 0xa030fd-0xa830fc to 0x15
+
+
+--> Code:  void *addr21 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr21, 0x16, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xa83109
+
+
+-->             Setting memory range 0xa83109-0xb03108 to 0x16
+
+
+--> Code:  void *addr22 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr22, 0x17, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xb03115
+
+
+-->             Setting memory range 0xb03115-0xb83114 to 0x17
+
+
+--> Code:  void *addr23 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr23, 0x18, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xb83121
+
+
+-->             Setting memory range 0xb83121-0xc03120 to 0x18
+
+
+--> Code:  void *addr24 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr24, 0x19, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xc0312d
+
+
+-->             Setting memory range 0xc0312d-0xc8312c to 0x19
+
+
+--> Code:  void *addr25 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr25, 0x1a, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xc83139
+
+
+-->             Setting memory range 0xc83139-0xd03138 to 0x1a
+
+
+--> Code:  void *addr26 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr26, 0x1b, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xd03145
+
+
+-->             Setting memory range 0xd03145-0xd83144 to 0x1b
+
+
+--> Code:  void *addr27 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr27, 0x1c, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xd83151
+
+
+-->             Setting memory range 0xd83151-0xe03150 to 0x1c
+
+
+--> Code:  void *addr28 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr28, 0x1d, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xe0315d
+
+
+-->             Setting memory range 0xe0315d-0xe8315c to 0x1d
+
+
+--> Code:  void *addr29 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr29, 0x1e, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xe83169
+
+
+-->             Setting memory range 0xe83169-0xf03168 to 0x1e
+
+
+--> Code:  void *addr30 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr30, 0x1f, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xf03175
+
+
+-->             Setting memory range 0xf03175-0xf83174 to 0x1f
+
+
+--> Code:  void *addr31 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr31, 0x20, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0xf83181
+
+
+-->             Setting memory range 0xf83181-0x1003180 to 0x20
+
+
+--> Code:  void *addr32 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr32, 0x21, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x100318d
+
+
+-->             Setting memory range 0x100318d-0x108318c to 0x21
+
+
+--> Code:  void *addr33 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr33, 0x22, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x1083199
+
+
+-->             Setting memory range 0x1083199-0x1103198 to 0x22
+
+
+--> Code:  void *addr34 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr34, 0x23, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x11031a5
+
+
+-->             Setting memory range 0x11031a5-0x11831a4 to 0x23
+
+
+--> Code:  void *addr35 = my_malloc(0x80000);
+
+
+--> Code:  memset(addr35, 0x24, 0x80000);
+
+
+--> Evaluating: addr = my_malloc(0x80000)  
+
+-->             Result: addr == 0x11831b1
+
+
+-->             Setting memory range 0x11831b1-0x12031b0 to 0x24
+
+
+--> Total allocated memory: 0x1200000
+
+
+--> Code:  my_free(addr1);
+
+
+--> Evaluating: err = my_free(0x83018)   
+
+--> Code:  my_free(addr3);
+
+
+--> Evaluating: err = my_free(0x183031)   
+
+--> Code:  my_free(addr5);
+
+
+--> Evaluating: err = my_free(0x283049)   
+
+--> Code:  my_free(addr7);
+
+
+--> Evaluating: err = my_free(0x383061)   
+
+--> Code:  my_free(addr9);
+
+
+--> Evaluating: err = my_free(0x483079)   
+
+--> Code:  my_free(addr11);
+
+
+--> Evaluating: err = my_free(0x583091)   
+
+--> Code:  my_free(addr13);
+
+
+--> Evaluating: err = my_free(0x6830a9)   
+
+--> Code:  my_free(addr15);
+
+
+--> Evaluating: err = my_free(0x7830c1)   
+
+--> Code:  my_free(addr17);
+
+
+--> Evaluating: err = my_free(0x8830d9)   
+
+--> Code:  my_free(addr19);
+
+
+--> Evaluating: err = my_free(0x9830f1)   
+
+--> Code:  my_free(addr21);
+
+
+--> Evaluating: err = my_free(0xa83109)   
+
+--> Code:  my_free(addr23);
+
+
+--> Evaluating: err = my_free(0xb83121)   
+
+--> Code:  my_free(addr25);
+
+
+--> Evaluating: err = my_free(0xc83139)   
+
+--> Code:  my_free(addr27);
+
+
+--> Evaluating: err = my_free(0xd83151)   
+
+--> Code:  my_free(addr29);
+
+
+--> Evaluating: err = my_free(0xe83169)   
+
+--> Code:  my_free(addr31);
+
+
+--> Evaluating: err = my_free(0xf83181)   
+
+--> Code:  my_free(addr33);
+
+
+--> Evaluating: err = my_free(0x1083199)   
+
+--> Total allocated memory: 0x980000
+
+
+--> Code:  my_free(addr2);
+
+
+--> Evaluating: err = my_free(0x103025)   
+
+--> Code:  my_free(addr4);
+
+
+--> Evaluating: err = my_free(0x20303d)   
+
+--> Code:  my_free(addr6);
+
+
+--> Evaluating: err = my_free(0x303055)   
+
+--> Code:  my_free(addr8);
+
+
+--> Evaluating: err = my_free(0x40306d)   
+
+--> Code:  my_free(addr10);
+
+
+--> Evaluating: err = my_free(0x503085)   
+
+--> Code:  my_free(addr12);
+
+
+--> Evaluating: err = my_free(0x60309d)   
+
+--> Code:  my_free(addr14);
+
+
+--> Evaluating: err = my_free(0x7030b5)   
+
+--> Code:  my_free(addr16);
+
+
+--> Evaluating: err = my_free(0x8030cd)   
+
+--> Code:  my_free(addr18);
+
+
+--> Evaluating: err = my_free(0x9030e5)   
+
+--> Code:  my_free(addr20);
+
+
+--> Evaluating: err = my_free(0xa030fd)   
+
+--> Code:  my_free(addr22);
+
+
+--> Evaluating: err = my_free(0xb03115)   
+
+--> Code:  my_free(addr24);
+
+
+--> Evaluating: err = my_free(0xc0312d)   
+
+--> Code:  my_free(addr26);
+
+
+--> Evaluating: err = my_free(0xd03145)   
+
+--> Code:  my_free(addr28);
+
+
+--> Evaluating: err = my_free(0xe0315d)   
+
+--> Code:  my_free(addr30);
+
+
+--> Evaluating: err = my_free(0xf03175)   
+
+--> Code:  my_free(addr32);
+
+
+--> Evaluating: err = my_free(0x100318d)   
+
+--> Code:  my_free(addr34);
+
+
+--> Evaluating: err = my_free(0x11031a5)   
+
+--> Total allocated memory: 0x100000
+
+
+--> Memory available: 0x1100000    allocation size: 0x100000    allocation count: 17
+
+
+--> Code:  addr1 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr1, 0x25, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x83018
+
+
+-->             Setting memory range 0x83018-0x183017 to 0x25
+
+
+--> Code:  addr2 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr2, 0x26, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x183031
+
+
+-->             Setting memory range 0x183031-0x283030 to 0x26
+
+
+--> Code:  addr3 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr3, 0x27, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x283049
+
+
+-->             Setting memory range 0x283049-0x383048 to 0x27
+
+
+--> Code:  addr4 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr4, 0x28, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x383061
+
+
+-->             Setting memory range 0x383061-0x483060 to 0x28
+
+
+--> Code:  addr5 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr5, 0x29, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x483079
+
+
+-->             Setting memory range 0x483079-0x583078 to 0x29
+
+
+--> Code:  addr6 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr6, 0x2a, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x583091
+
+
+-->             Setting memory range 0x583091-0x683090 to 0x2a
+
+
+--> Code:  addr7 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr7, 0x2b, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x6830a9
+
+
+-->             Setting memory range 0x6830a9-0x7830a8 to 0x2b
+
+
+--> Code:  addr8 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr8, 0x2c, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x7830c1
+
+
+-->             Setting memory range 0x7830c1-0x8830c0 to 0x2c
+
+
+--> Code:  addr9 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr9, 0x2d, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x8830d9
+
+
+-->             Setting memory range 0x8830d9-0x9830d8 to 0x2d
+
+
+--> Code:  addr10 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr10, 0x2e, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x9830f1
+
+
+-->             Setting memory range 0x9830f1-0xa830f0 to 0x2e
+
+
+--> Code:  addr11 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr11, 0x2f, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xa83109
+
+
+-->             Setting memory range 0xa83109-0xb83108 to 0x2f
+
+
+--> Code:  addr12 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr12, 0x30, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xb83121
+
+
+-->             Setting memory range 0xb83121-0xc83120 to 0x30
+
+
+--> Code:  addr13 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr13, 0x31, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xc83139
+
+
+-->             Setting memory range 0xc83139-0xd83138 to 0x31
+
+
+--> Code:  addr14 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr14, 0x32, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xd83151
+
+
+-->             Setting memory range 0xd83151-0xe83150 to 0x32
+
+
+--> Code:  addr15 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr15, 0x33, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xe83169
+
+
+-->             Setting memory range 0xe83169-0xf83168 to 0x33
+
+
+--> Code:  addr16 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr16, 0x34, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0xf83181
+
+
+-->             Setting memory range 0xf83181-0x1083180 to 0x34
+
+
+--> Code:  addr17 = my_malloc(0x100000);
+
+
+--> Code:  memset(addr17, 0x35, 0x100000);
+
+
+--> Evaluating: addr = my_malloc(0x100000)  
+
+-->             Result: addr == 0x1083199
+
+
+-->             Setting memory range 0x1083199-0x1183198 to 0x35
+
+
+--> Total allocated memory: 0x1200000
+
+
+--> Code:  my_free(addr2);
+
+
+--> Evaluating: err = my_free(0x183031)   
+
+--> Code:  my_free(addr4);
+
+
+--> Evaluating: err = my_free(0x383061)   
+
+--> Code:  my_free(addr6);
+
+
+--> Evaluating: err = my_free(0x583091)   
+
+--> Code:  my_free(addr8);
+
+
+--> Evaluating: err = my_free(0x7830c1)   
+
+--> Code:  my_free(addr10);
+
+
+--> Evaluating: err = my_free(0x9830f1)   
+
+--> Code:  my_free(addr12);
+
+
+--> Evaluating: err = my_free(0xb83121)   
+
+--> Code:  my_free(addr14);
+
+
+--> Evaluating: err = my_free(0xd83151)   
+
+--> Code:  my_free(addr16);
+
+
+--> Evaluating: err = my_free(0xf83181)   
+
+--> Total allocated memory: 0xa00000
+
+
+--> Code:  my_free(addr3);
+
+
+--> Evaluating: err = my_free(0x283049)   
+
+--> Code:  my_free(addr5);
+
+
+--> Evaluating: err = my_free(0x483079)   
+
+--> Code:  my_free(addr7);
+
+
+--> Evaluating: err = my_free(0x6830a9)   
+
+--> Code:  my_free(addr9);
+
+
+--> Evaluating: err = my_free(0x8830d9)   
+
+--> Code:  my_free(addr11);
+
+
+--> Evaluating: err = my_free(0xa83109)   
+
+--> Code:  my_free(addr13);
+
+
+--> Evaluating: err = my_free(0xc83139)   
+
+--> Code:  my_free(addr15);
+
+
+--> Evaluating: err = my_free(0xe83169)   
+
+--> Total allocated memory: 0x300000
+
+
+--> Memory available: 0xf00000    allocation size: 0x200000    allocation count: 7
+
+
+--> Code:  addr2 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr2, 0x36, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0x183031
+
+
+-->             Setting memory range 0x183031-0x383030 to 0x36
+
+
+--> Code:  addr3 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr3, 0x37, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0x383061
+
+
+-->             Setting memory range 0x383061-0x583060 to 0x37
+
+
+--> Code:  addr4 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr4, 0x38, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0x583091
+
+
+-->             Setting memory range 0x583091-0x783090 to 0x38
+
+
+--> Code:  addr5 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr5, 0x39, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0x7830c1
+
+
+-->             Setting memory range 0x7830c1-0x9830c0 to 0x39
+
+
+--> Code:  addr6 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr6, 0x3a, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0x9830f1
+
+
+-->             Setting memory range 0x9830f1-0xb830f0 to 0x3a
+
+
+--> Code:  addr7 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr7, 0x3b, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0xb83121
+
+
+-->             Setting memory range 0xb83121-0xd83120 to 0x3b
+
+
+--> Code:  addr8 = my_malloc(0x200000);
+
+
+--> Code:  memset(addr8, 0x3c, 0x200000);
+
+
+--> Evaluating: addr = my_malloc(0x200000)  
+
+-->             Result: addr == 0xd83151
+
+
+-->             Setting memory range 0xd83151-0xf83150 to 0x3c
+
+
+--> Total allocated memory: 0x1100000
+
+
+--> Code:  my_free(addr3);
+
+
+--> Evaluating: err = my_free(0x383061)   
+
+--> Code:  my_free(addr5);
+
+
+--> Evaluating: err = my_free(0x7830c1)   
+
+--> Code:  my_free(addr7);
+
+
+--> Evaluating: err = my_free(0xb83121)   
+
+--> Total allocated memory: 0xb00000
+
+
+--> Code:  my_free(addr4);
+
+
+--> Evaluating: err = my_free(0x583091)   
+
+--> Code:  my_free(addr6);
+
+
+--> Evaluating: err = my_free(0x9830f1)   
+
+--> Total allocated memory: 0x700000
+
+
+--> Memory available: 0xb00000    allocation size: 0x400000    allocation count: 2
+
+
+--> Code:  addr3 = my_malloc(0x400000);
+
+
+--> Code:  memset(addr3, 0x3d, 0x400000);
+
+
+--> Evaluating: addr = my_malloc(0x400000)  
+
+-->             Result: addr == 0x383061
+
+
+-->             Setting memory range 0x383061-0x783060 to 0x3d
+
+
+--> Code:  addr4 = my_malloc(0x400000);
+
+
+--> Code:  memset(addr4, 0x3e, 0x400000);
+
+
+--> Evaluating: addr = my_malloc(0x400000)  
+
+-->             Result: addr == 0x7830c1
+
+
+-->             Setting memory range 0x7830c1-0xb830c0 to 0x3e
+
+
+--> Total allocated memory: 0xf00000
+
+
+--> Total allocated memory: 0xf00000
+
+
+--> Code:  my_free(addr0);
+
+
+--> Evaluating: err = my_free(0x300c)   
+
+--> Code:  my_free(addr1);
+
+
+--> Evaluating: err = my_free(0x83018)   
+
+--> Code:  my_free(addr2);
+
+
+--> Evaluating: err = my_free(0x183031)   
+
+--> Code:  my_free(addr3);
+
+
+--> Evaluating: err = my_free(0x383061)   
+
+--> Code:  my_free(addr4);
+
+
+--> Evaluating: err = my_free(0x7830c1)   
+
+--> Code:  my_free(addr8);
+
+
+--> Evaluating: err = my_free(0xd83151)   
+
+--> Code:  my_free(addr17);
+
+
+--> Evaluating: err = my_free(0x1083199)   
+
+--> Code:  my_free(addr35);
+
+
+--> Evaluating: err = my_free(0x11831b1)   
+
+--> Code:}
+
+
+--> Done
