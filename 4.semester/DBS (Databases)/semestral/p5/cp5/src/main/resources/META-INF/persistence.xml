@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="ApplicationPU">
+
+        <class>entity.BloodEntity</class>
+        <class>entity.BranchEntity</class>
+        <class>entity.DoctorEntity</class>
+        <class>entity.DonationEntity</class>
+        <class>entity.DonorEntity</class>
+        <class>entity.InviteEntity</class>
+        <class>entity.PersonEntity</class>
+        <class>entity.TransferEntity</class>
+        <class>entity.WorkplaceEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://slon.felk.cvut.cz:5432/semenvol"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="semenvol"/>
+            <property name="hibernate.connection.password" value="semenvol_DBS212"/>
+        </properties>
+    </persistence-unit>
+</persistence>

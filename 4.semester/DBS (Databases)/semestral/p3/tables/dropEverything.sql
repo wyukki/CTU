@@ -1,0 +1,1 @@
+DROP TABLE blood, branch, donor, doctor, invite, person, transfer, workplace

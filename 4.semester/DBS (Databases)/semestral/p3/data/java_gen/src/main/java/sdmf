@@ -1,0 +1,107 @@
+CREATE TABLE branch (
+    branchNumber INTEGER,
+	CID INTEGER,
+    CEO VARCHAR(100),
+    bankID INTEGER UNIQUE NOT NULL,
+    bankCapacity INTEGER NOT NULL,
+    bankUsedPlace INTEGER NOT NULL,
+    hospital VARCHAR(100) UNIQUE NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    street VARCHAR(100) NOT NULL,
+    zip CHAR(5) NOT NULL,
+    PRIMARY KEY (branchNumber, CID, CEO),
+    CONSTRAINT bank_ch_space CHECK
+        (bankUsedPlace <= bankUsedPlace)
+);
+
+CREATE TABLE person (
+    pass VARCHAR(10) PRIMARY KEY,
+    phone VARCHAR(12),
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE donor (
+    pass VARCHAR(10) NOT NULL UNIQUE,
+    medCard VARCHAR(12),
+    PRIMARY KEY (medCard),
+    CONSTRAINT pass_fk
+        FOREIGN KEY (pass) REFERENCES person (pass)
+);
+
+CREATE TABLE doctor (
+    pass VARCHAR(10) NOT NULL UNIQUE,
+    workerID INTEGER,
+    PRIMARY KEY (workerID),
+    CONSTRAINT pass_fk
+        FOREIGN KEY (pass) REFERENCES person (pass)
+);
+
+CREATE TABLE invite (
+    donorMedCard VARCHAR(10),
+    inviteMedCard VARCHAR(10),
+    PRIMARY KEY (donorMedCard, inviteMedCard),
+    CONSTRAINT donor_fk
+		FOREIGN KEY (donorMedCard) REFERENCES donor(medCard),
+    CONSTRAINT invited_fk
+		FOREIGN KEY (inviteMedCard) REFERENCES donor(medCard)
+);
+
+CREATE TABLE transfer (
+    branchNumber INTEGER,
+	CID INTEGER UNIQUE NOT NULL,
+	CEO VARCHAR(100) UNIQUE NOT NULL,
+    amount INTEGER NOT NULL,
+    PRIMARY KEY (branchNumber),
+    CONSTRAINT branch_fk
+		FOREIGN KEY (branchNumber, CID, CEO) REFERENCES branch (branchNumber, CID, CEO),
+    CONSTRAINT
+		amount_ch CHECK (amount >= 0)
+);
+
+CREATE TABLE workplace (
+    branchNumber INTEGER,
+	CID INTEGER UNIQUE NOT NULL,
+	CEO VARCHAR(100) UNIQUE NOT NULL,
+    doctorID INTEGER,
+    PRIMARY KEY (branchNumber),
+    CONSTRAINT branch_fk
+		FOREIGN KEY (branchNumber, CID, CEO) REFERENCES branch (branchNumber, CID, CEO),
+    CONSTRAINT doctor_fk
+		FOREIGN KEY (doctorID) REFERENCES doctor(workerID)
+);
+
+CREATE TABLE blood (
+    bloodID INTEGER,
+    doctorID INTEGER NOT NULL,
+    donorMedCard VARCHAR(12) NOT NULL,
+    branchNumber INTEGER NOT NULL,
+	CID INTEGER UNIQUE NOT NULL,
+	CEO VARCHAR(100) UNIQUE NOT NULL,
+    day SMALLINT NOT NULL,
+    month SMALLINT NOT NULL,
+    year SMALLINT NOT NULL,
+    Rh BOOLEAN NOT NULL,
+    bloodGroup SMALLINT NOT NULL,
+    PRIMARY KEY (bloodID),
+    CONSTRAINT blood_uq
+		UNIQUE (doctorID, donorMedCard, branchNumber, day, month, year),
+    CONSTRAINT doctor_fk
+		FOREIGN KEY (doctorID) REFERENCES doctor (workerID),
+    CONSTRAINT donor_fk
+		FOREIGN KEY (donorMedCard) REFERENCES donor (medCard),
+    CONSTRAINT branch_fk
+		FOREIGN KEY (branchNumber, CID, CEO) REFERENCES branch (branchNumber, CID, CEO)
+);
+
+CREATE TABLE bloodDonation (
+    donorMedCard VARCHAR(12),
+    doctorID INTEGER,
+    bloodID INTEGER,
+    PRIMARY KEY (donorMedCard, doctorID, bloodID),
+    CONSTRAINT doctor_fl
+		FOREIGN KEY (doctorID) REFERENCES doctor (workerID),
+    CONSTRAINT donor_fk
+		FOREIGN KEY (donorMedCard) REFERENCES donor (medCard),
+    CONSTRAINT blood_fk FOREIGN KEY (bloodID) REFERENCES blood (bloodID)
+);
+

@@ -1,0 +1,5 @@
+Blood Donation Center
+The company "Saving blood" manages several blood donation centers. In each branch there are doctors who conduct a medical examination of clients, and who directly take blood from suitable clients.
+Suitable clients are considered to be all adults under 65 years of age who do not have serious illnesses, and whose body weight exceeds 50 kg.
+Each branch has its own storage room, in which the donated blood is sorted by groups and Rh factor. The nearest hospital is assigned to each branch, to which the donated blood is delivered once a week.
+A client who has donated blood three times receives a financial reward. Each client has the opportunity to bring his friend, which is also financially rewarded.
