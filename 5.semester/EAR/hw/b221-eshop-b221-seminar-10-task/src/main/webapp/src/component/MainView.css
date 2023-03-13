@@ -1,0 +1,10 @@
+.cart {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.cart-content {
+    margin-left: 0.15rem;
+    vertical-align: super;
+    font-size: 90%;
+}

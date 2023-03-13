@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-toolbar > button {
+    margin-left: 0.5em;
+}
+
+.btn-toolbar > button:first-child {
+    margin-left: 0.0em;
+}
+
+.form-row {
+    margin-bottom: 0.8em;
+}
+
+.pull-right {
+    text-align: right;
+}
+
+.italic {
+    font-style: italic;
+}

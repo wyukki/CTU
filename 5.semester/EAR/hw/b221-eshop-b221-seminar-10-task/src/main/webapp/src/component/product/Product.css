@@ -1,0 +1,21 @@
+.tab-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.categories {
+    margin-bottom: 1rem;
+}
+
+.categories span {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.categories span:first-child {
+    margin-left: 0;
+}
+
+.remove-category-icon {
+    margin-left: 0.5em;
+}
