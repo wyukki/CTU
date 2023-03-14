@@ -9,5 +9,5 @@ All CTU programming homeworks\semestral assignments
 
 4.semester: DBS (Databases) (Java), FUP (Functional programming) (Lisp\Haskell), OPT (Optimization) (Python), PDV (Parallel and distributed computing) (C++), TS1 (Software testing) (Java), ZUI (Introduction to Artificial intelligence) (Python)
 
-5.semester: EAR (Enterprise acrhitectures)
+5.semester: EAR (Enterprise acrhitectures), SIN (Software Engineering)
 
